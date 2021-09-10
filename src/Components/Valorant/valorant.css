@@ -1,0 +1,14 @@
+.page-btn{
+    padding: 10px;
+    border: none;
+    margin: 5px;
+    font-size: large;
+    border-radius: 5px;
+    background-color: rgb(17, 17, 17);
+    color: white;
+    transition: 0.4s;
+    transition-timing-function: ease;
+}
+.page-btn:hover{
+    background-color: rgb(94, 47, 94);
+}

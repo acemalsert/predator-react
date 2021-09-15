@@ -6,6 +6,7 @@ import Login from './Login/Login'
 import {Switch,Route,Redirect} from 'react-router-dom'
 import Register from './Register/Register'
 import ValorantNews from './Valorant/ValorantNews'
+import Individual from './IndividualNews/Individual'
 function Main() {
     return (
         <div>
@@ -29,8 +30,8 @@ function Main() {
                     <Route exact path ="/">
                         <Dashboard/>
                     </Route>
-                    <Route path="">
-
+                    <Route exact path="/single/:category/:title">
+                        <Individual/>
                     </Route>
                     <Redirect to="/"/>
                 </Switch>

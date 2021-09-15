@@ -4,7 +4,7 @@ function Dashboard() {
     return (
         <div className="container">
             <div className = "row">
-                <div className="col-12 col-md-5 m-3 ">
+                <div className="col-12 col-md-6 mt-2 mb-2">
                     <div className="card">
                         <img src="/assets/apexlegendsCard.jpg" className="card-img-top" alt="..."/>
                         <div className="card-body">
@@ -14,7 +14,7 @@ function Dashboard() {
                         </div>
                     </div>
                 </div>
-                <div className="col-12 col-md-5 m-3 ">
+                <div className="col-12 col-md-6 mt-2 mb-2">
                     <div className="card">
                         <img src="/assets/valorantCard.jpg" className="card-img-top" alt="..."/>
                         <div className="card-body">
@@ -24,7 +24,7 @@ function Dashboard() {
                         </div>
                     </div>
                 </div>
-                <div className="col-12 col-md-5 m-3">
+                <div className="col-12 col-md-6 mt-2 mb-5">
                     <div className="card">
                         <img src="/assets/warzoneCard.jpg" className="card-img-top" alt="..."/>
                         <div className="card-body">
@@ -34,7 +34,7 @@ function Dashboard() {
                         </div>
                     </div>
                 </div>
-                <div className="col-12 col-md-5 m-3">
+                <div className="col-12 col-md-6 mt-2 mb-5">
                     <div className="card">
                         <img src="/assets/otherGamesCard.jpg" className="card-img-top" alt="..."/>
                         <div className="card-body">

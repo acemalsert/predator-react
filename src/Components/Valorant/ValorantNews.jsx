@@ -19,7 +19,7 @@ function ValorantNews() {
 
     const fecthValorantNews = async ()=>{
         try {
-            const res = await axios.get('news/valorant')
+            const res = await axios.get('http://localhost:5000/api/news/valorant')
             setAllNews(res.data)
         } catch (error) {
             console.log(error)
@@ -40,10 +40,10 @@ function ValorantNews() {
                     return(
                         <div className = "col-12 col-md-4 ml-3 mt-3 mb-3" key = {news._id}>
                             <div className="card">
-                                <img className="card-img-top" src={news.imgUrl} alt="Card image cap"/>
+                                <img className="card-img-top" src={news.imgUrl} alt={news.title}/>
                                 <div className="card-body">
                                     <h5 className="card-title">{news.title}</h5>
-                                    <Link to={`valorant/${news.title}`} className="page-btn">Haberlere Git</Link>
+                                    <button className="page-btn"><Link to={`single/valorant/${news.title}`}>Haberlere Git</Link></button>
                                 </div>
                             </div>
                         </div> 

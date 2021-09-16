@@ -42,3 +42,16 @@ nav{
     color:white;
     text-decoration: none;
 }
+.fa-user{
+   color: white;
+   font-size: large;
+   transition: 0.4s;
+   transition-timing-function: ease; 
+}
+.fa-user:hover{
+    color: rgb(94, 47, 94);;
+}
+a{
+    text-decoration: none;
+    color: white;
+}

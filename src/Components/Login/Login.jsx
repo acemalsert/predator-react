@@ -6,7 +6,7 @@ function Login() {
     const [email,setEmail] = useState('')
     const [password,setPassword] = useState('')
 
-    const {dispatch} = useContext(AuthContext)
+    const {user,dispatch} = useContext(AuthContext)
 
     const handleSumbit = (event)=>{
         event.preventDefault()
@@ -16,13 +16,15 @@ function Login() {
                     email:email,
                     password:password
                 })
+                console.log(res.data)
                 dispatch({type:'UPDATE_USER',payload:res.data})
             } catch (error) {
                 console.log(error)
             }
+            window.location.replace('/')
         }
         loginCall(email,password)
-        window.location.replace('/')
+
     }
 
     return (
